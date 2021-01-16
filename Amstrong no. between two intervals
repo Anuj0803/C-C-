@@ -1,0 +1,25 @@
+#include<conio.h>
+#include<iostream>
+using namespace std;
+main()
+{
+   int n1,n2,i,r,p,h,k;
+   cin>>n1>>n2;
+   for(i=n1;i<n2;i++)
+   {
+   	 int s=0;
+   	 k=i;
+   	  while(k!=0)
+    {
+   	 r=k%10;
+   	 p=r*r*r;
+   	 s=s+p;
+   	 k=k/10;
+    }
+     if(s==i)
+     cout<<s<<",";
+     
+   
+   }
+   
+}
