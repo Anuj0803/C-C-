@@ -1,0 +1,25 @@
+#include<conio.h>
+#include<iostream>
+using namespace std;
+main()
+{
+	int n1,n2,gcd,i;
+	cin>>n1>>n2;
+	int max=(n1>n2) ? n1:n2;
+	while(1)
+	{
+		if(max%n1==0 && max%n2==0)
+		{
+			cout<<"LCM of two no. is "<<max<<endl;
+			break;
+		}
+		max++;
+	}
+	for(i=1; i <= n1 && i <= n2; ++i)
+    {
+        if(n1%i==0 && n2%i==0)
+            gcd = i;
+    }
+    cout<<"GCD of two no. is "<<gcd;
+	return 0;
+}
