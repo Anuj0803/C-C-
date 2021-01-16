@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#include<math.h>
+using namespace std;
+ main()
+{
+	int N,a,b,count=0,r,x,c;
+	cin>>N;
+	x=N;
+	while(N!=0)
+	{
+		N=N/10;
+		count++;
+	}
+	//cout<<count;
+	a=pow(10,count);
+	//cout<<a;
+	b=x*x;
+    c=b%a;
+    if(x>0)
+    {
+    	if(c==x)
+      cout<<"correct number";
+       else
+       cout<<"incorrect number";
+	}
+	else
+	cout<<"wrong input";
+    
+	
+}
