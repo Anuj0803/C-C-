@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	int n,i,j,c=0,d=0,x;
+	int a[20],b[20];
+	for(i=0;i<=20;i=i+2)
+	{
+		a[i]=2*c;
+		c++;
+	}
+	for(i=1;i<=20;i=i+2)
+	{
+		a[i]=d;
+		d++;
+	}
+	for(i=0;i<=20;i++)
+	{
+		b[i]=a[i];
+     	//cout<<b[i]<<",";
+	}
+	cin>>x;
+	cout<<b[x-1];
+	
+}
