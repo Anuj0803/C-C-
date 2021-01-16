@@ -1,0 +1,35 @@
+#include<conio.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int p,q,i,j;
+	cout<<"enter size of array";
+	cin>>p;
+	int a[p][p];
+	for(i=1;i<=p;i++)
+	{
+		for(j=1;j<=p;j++)
+		{
+			cin>>a[i][j];
+		}
+	}
+	for(i=1;i<=p;i++)
+	{
+		if(i%2!=0)
+		{
+				for(j=1;j<=p;j++)
+		   {
+			cout<<a[i][j];
+		   }   
+		}
+		if(i%2==0)
+		{
+			for(j=p;j>=1;j--)
+		  {
+			cout<<a[i][j];
+		  }
+	
+		}	
+	}		
+}
