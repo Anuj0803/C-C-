@@ -1,0 +1,34 @@
+#include<conio.h>
+#include<iostream>
+#include<ctype.h>
+#include<stdbool.h>
+#include<string.h>
+#include<stdio.h>
+using namespace std;
+ main()
+{
+	char str[1000];
+	cout<<"enter a string";
+	fgets(str,1000,stdin);
+	int freq[26]={0};
+	for(int i=0;str[i] !='\0';i++)
+	{
+		if(str[i] !=' ')
+		{
+			char c= tolower(str[i]);
+			int index = c-'a';
+			freq[index]=freq[index]+1;
+		}
+	}
+	int flag=1;
+	for(int i=0;i<26;i++)
+	{
+		if(freq[i]==0)
+		 flag=0;
+	}
+	if(flag==1)
+	cout<<"pangarm";
+	else
+	cout<<"no pangram";
+	return 0;
+}
