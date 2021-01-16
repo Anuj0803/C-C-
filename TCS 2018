@@ -1,0 +1,33 @@
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+main()
+{
+	int i,j,k;
+	string str1,str2,str3;
+	cin>>str1>>str2>>str3;
+	for(i=0;i<str1.length();i++)
+	{
+		if(str1[i]=='a'||str1[i]=='e'||str1[i]=='i'||str1[i]=='o'||str1[i]=='u')
+		{
+			str1[i]='*';
+		}
+		cout<<str1[i];
+	}
+	for(j=0;j<str2.length();j++)
+	{
+		if(str2[j]=='a'||str2[j]=='e'||str2[j]=='i'||str2[j]=='o'||str2[j]=='u')
+		{
+		   	
+		}
+		else
+		str2[j]='@';
+		cout<<str2[j];
+	}
+	for(k=0;k<str3.length();k++)
+	{
+		str3[k]=char(str3[k]-32);
+		cout<<str3[k];
+	}
+}
