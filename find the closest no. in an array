@@ -1,0 +1,41 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+main()
+{
+	int x,a[5],b[5],c[5],i,j,k;
+	cout<<"enter array";
+	for(i=0;i<5;i++)
+	{
+		cin>>a[i];
+	}
+	cout<<"enter no. ";
+	cin>>x;
+	
+	for(i=0;i<5;i++)
+	{
+	    b[i]=a[i]-x;
+	}
+
+	for(i=0;i<5;i++)
+	if(b[i]>0)
+	{
+		c[i]=b[i];
+	  // cout<<c[i]<<endl;
+	}
+	k = c[0];
+	for(i=1;i<5;i++)
+	{
+		if(c[i]>0)
+	   {
+           if (c[i] < k) 
+              k =c[i];
+	   }
+	}
+	for(i=1;i<5;i++)
+	{
+			if(b[i]==k)
+	cout<<a[i]; 
+	}
+	  
+}
