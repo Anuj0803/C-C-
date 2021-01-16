@@ -1,0 +1,77 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+   float Perimeter,area,l,b,r;
+   int n,x;
+   cout<<"1. Area"<<endl;
+   cout<<"2. Perimeter"<<endl;
+   cin>>x;
+   switch(x)
+   {
+   	case 1:
+   	cout<<"enter no. to find area of which figure "<<endl;
+   	cout<<"1. square"<<endl;
+     cout<<"2. rectange"<<endl;
+      cout<<"3. circle"<<endl;
+     cin>>n;
+   switch(n)
+   {
+   	  case 1:
+   	  	cout<<"enter length of side";
+   	  	cin>>l;
+   	  	area = l*l;
+   	  	break;
+   	  	
+   	  case 2:
+   	  	cout<<"enter length and breath of rectangle";
+   	  	cin>>l>>b;
+   	  	area=l*b;
+   	  	break;
+   	  	
+   	  case 3:
+   	  	cout<<"enter radius of circle";
+   	  	cin>>r;
+   	  	area=3.14*r*r;
+   	  	break;
+   	  	
+   	  default :
+   		cout<<"invalid no.";
+   }
+    cout<<area; 
+    
+    case 2:
+    		cout<<"enter no. to find Perimeter of which figure "<<endl;
+    		cout<<"1. square"<<endl;
+            cout<<"2. rectange"<<endl;
+            cout<<"3. circle"<<endl;
+            cin>>n;
+   switch(n)
+   {
+   	  case 1:
+   	  	cout<<"enter length of side";
+   	  	cin>>l;
+   	  	Perimeter = 4*l;
+   	  	break;
+   	  	
+   	  case 2:
+   	  	cout<<"enter length and breath of rectangle";
+   	  	cin>>l>>b;
+   	  	Perimeter=2*(l+b);
+   	  	break;
+   	  	
+   	  case 3:
+   	  	cout<<"enter radius of circle";
+   	  	cin>>r;
+   	  	Perimeter=2*3.14*r;
+   	  	break;
+   	  	
+   	  default :
+   		cout<<"invalid no.";
+   }
+    cout<<Perimeter; 
+   }
+   
+   
+}
