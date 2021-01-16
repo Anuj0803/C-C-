@@ -1,0 +1,29 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	int n,i,j,count=0;
+	cin>>n;
+	int c;
+	int a[n-1];
+	for(i=0;i<n-1;i++)
+	{
+		cin>>a[i];
+	}
+	for(i=0;i<n-1;i++)
+	{
+		count=0;
+		for(j=0;j<n-1;j++)
+		{
+			if(a[i]==a[j])
+			count++;
+		
+		}
+			if(count%2!=0)
+	       {
+		       c=a[i];
+        	}	
+	}
+   cout<<c;
+}
