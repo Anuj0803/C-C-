@@ -1,0 +1,41 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int i,a,b,n;
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		if(i%2!=0)
+		{
+			if(i==1)
+			{
+				a=0;
+				
+		    }
+		    else
+			{
+		        a=a+7;
+			} 
+		}
+		else
+		{
+			if(i==2)
+			{
+				b=0;
+			
+			}
+			else
+			{
+				b=b+6;
+			}
+		}
+	}
+	if(n%2!=0)
+	cout<<a;
+	else
+	cout<<b;
+	return 0;
+	
+}
